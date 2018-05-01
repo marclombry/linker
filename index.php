@@ -8,5 +8,9 @@ $database= new Database($config);
 var_dump($database->all());
 $table = new Table($config);
 
-echo "<div style='background-color:#1abc9c'>".$table->all(true)->name."</div>";
+echo "<div style='background-color:#1abc9c'>";
+	foreach($table->all(true) as $elem){
+		echo '<p style="padding:2px;">'.$elem.'</p>';
+	}
+echo "</div>";
 
