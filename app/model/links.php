@@ -25,6 +25,7 @@ Class Links {
 		}
 	}
 
+	//setter//
 	public function setId($id)
     {
         $this->id = $id;
@@ -45,5 +46,41 @@ Class Links {
         $this->photo = $photo;
     }
 
+    public function setHref($href){
+    	$this->href = $href;
+    }
+
+    public function setCategory($category){
+    	$this->category = $category;
+    }
+
+    //getter//
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getName()
+    {
+       return $this->name ;
+    }
+
+    public function getColor()
+    {
+       return $this->color;
+    }
+
+    public function getPhoto()
+    {
+       return $this->photo;
+    }
+
+    public function getHref(){
+    	return $this->href;
+    }
+
+    public function getCategory(){
+    	return $this->category;
+    }
 
 }

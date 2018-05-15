@@ -14,6 +14,10 @@ class Database extends PDO{
 		return $this->pdo;
 	}
 
+	public function select($query){
+		return $this->pdo->query($query)->fetchAll(PDO::FETCH_OBJ);
+	}
+
 	public function all($one=null){
 		if($one){
 			return $this->pdo->query("SELECT * FROM $this->table")->fetch(PDO::FETCH_OBJ);
