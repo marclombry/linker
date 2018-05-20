@@ -55,7 +55,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#add">Ajouter</a></li>
-            <li><a href="#up">Modifier</a></li>
+            <li><a href="modif.php">Modifier</a></li>
             <li><a href="#del">Supprimer</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -77,7 +77,7 @@
               <?=$content;?>
             
             
-           
+    
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 

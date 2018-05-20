@@ -3,6 +3,7 @@ $config=require_once('app/database/config.php');
 require_once('app/database/database.php');
 require_once('app/database/table.php');
 require_once('app/model/links.php');
+require_once('app/form.php');
 $content='';$choiceLink='';
 //var_dump($config);
 $database= new Database($config);
