@@ -39,6 +39,8 @@
     	nav{margin:0px 0px 20px 0px;}
     	#content{margin-top: 100px;}
       form{margin: 100px 10px 10px 10px;}
+      .flexy{display: flex;flex-wrap: wrap;}
+      .block{max-width: 400px;max-height:400px; padding:2px;margin:4px; }
     </style>
   </head>
   <body>
@@ -55,11 +57,13 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="create"> <span class="glyphicon glyphicon-pencil"></span> Ajouter</a></li>
+          
             <?php
               if(!isset($_SESSION['auth']) || empty($_SESSION)){
                 echo '<li><a href="login">Se connecter</a></li>';
               }else{
+                echo '<li><a href="create"> <span class="glyphicon glyphicon-pencil"></span> Ajouter</a></li>';
+                echo '<li><a href="delete"> <span class="glyphicon glyphicon-remove"></span> Delete</a></li>';
                 echo '<li><a href="/linker/deco">deco</a></li>';
                 echo '<li><a href=""><span class="glyphicon glyphicon-user"></span> '.$_SESSION['auth']['pseudo'].'</a></li>';
               }

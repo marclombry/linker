@@ -32,8 +32,8 @@ class AdminController{
 	public static function delete($id){
 		global $database;
 		if(isset($_GET['id'])){
-			$id = htmlspecialchars($_GET['id']);
-			$database->delete($id,'moneys');
+			$id = formFilter::secure_input($_GET['id']);
+			$database->delete($id,'links');
 		}
 		
 	}
