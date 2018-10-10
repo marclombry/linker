@@ -1,9 +1,9 @@
 <?php
 echo 'enfin';
-$config=require_once('app/database/config.php');
-require_once('app/database/database.php');
-require_once('app/database/table.php');
-require_once('app/model/links.php');
+$config=require_once('core/app/database/config.php');
+require_once('core/app/database/database.php');
+require_once('core/app/database/table.php');
+require_once('core/app/model/links.php');
 //var_dump($config);
 $database= new Database($config);
 var_dump($database->all());
@@ -216,47 +216,20 @@ foreach ($d as $key => $v) {
 
 $l= [
     array(
-    	':name'=>'Github',
-    	':color'=>'blue',
-    	':photo'=>'github',
-    	':href'=>'https://github.com/',
-    	'category'=>'social network'
+    	':name'=>'Gmail',
+    	':color'=>'red',
+    	':photo'=>'gmail',
+    	':href'=>'https://mail.google.com/mail/u/0/',
+    	'category'=>'messagerie'
     ),
  array(
-    	':name'=>'Stackoverflow',
-    	':color'=>'blue',
-    	':photo'=>'stack',
-    	':href'=>'https://stackoverflow.com/',
-    	'category'=>'social network'
+    	':name'=>'Outlook',
+    	':color'=>'red',
+    	':photo'=>'outlook',
+    	':href'=>'https://outlook.live.com/owa/',
+    	'category'=>'messagerie'
     ),
-  array(
-    	':name'=>'Facebook',
-    	':color'=>'blue',
-    	':photo'=>'facebook',
-    	':href'=>'https://fr-fr.facebook.com/',
-    	'category'=>'social network'
-    ),
-   array(
-    	':name'=>'Twitter',
-    	':color'=>'blue',
-    	':photo'=>'twiter',
-    	':href'=>'https://twitter.com/?lang=fr',
-    	'category'=>'social network'
-    ),
-   array(
-    	':name'=>'Instagram',
-    	':color'=>'blue',
-    	':photo'=>'instagram',
-    	':href'=>'https://www.instagram.com/?hl=fr',
-    	'category'=>'social network'
-    ),
-   array(
-    	':name'=>'Pinterest',
-    	':color'=>'blue',
-    	':photo'=>'pinterest',
-    	':href'=>'https://www.pinterest.fr/',
-    	'category'=>'social network'
-    ),
+
   
   
  

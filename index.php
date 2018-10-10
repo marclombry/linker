@@ -1,9 +1,12 @@
 <?php
-$config=require_once('app/database/config.php');
-require_once('app/database/database.php');
-require_once('app/database/table.php');
-require_once('app/model/links.php');
-require_once('app/form.php');
+/*
+$config=require_once('core/app/database/config.php');
+require_once('core/app/database/database.php');
+require_once('core/app/database/table.php');
+require_once('core/app/model/links.php');
+require_once('core/app/form.php');
+*/
+require_once('core/init.php');
 $content='';$choiceLink='';
 //var_dump($config);
 $database= new Database($config);
@@ -21,16 +24,19 @@ echo "</div>";
 */
 $link = new Links($table->all(true));
 //$l1 = $link->hydrate();
+
 $table->setTable('links');
+$t = $table->select("select * from links where category <> 'cartoon'",true);
+
 $all=[];
-foreach ($table->all() as $key => $link) {
+foreach ($t as $key => $link) {
 	array_push($all,new Links($link));
 }
 foreach($all as $key=> $value){
 	$content.='
-<div class="col-xs-6 col-lg-4" style="background-color:'.$value->getColor().'">
+<div class="block" style="background-color:'.$value->getColor().'">
     <h2>'.$value->getName().'</h2> 
-    <p><a href="'.$value->getHref().'" target="_blank"><img src="app/images/'.$value->getPhoto().'" width="100%"></a></p>     
+    <p><a href="'.$value->getHref().'" target="_blank"><img src="core/app/public/images/'.$value->getPhoto().'" width="100%"></a></p>     
 </div>';
 }
 
@@ -42,4 +48,5 @@ $d = array(
    );
   */
 //var_dump($database->delete(111,'langage'));
-require_once('app/view/index.view.php');
+require_once('core/app/view/index.view.php');
+
