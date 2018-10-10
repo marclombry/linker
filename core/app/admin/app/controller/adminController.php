@@ -1,16 +1,30 @@
 <?php
 class AdminController{
 
-
 	public static function create($post){
 		global $database;
+		$confirm='';
 		if(isset($_POST)){
 			$_POST = array_map('htmlspecialchars',$_POST);
+
 			$donnee = [
-				':valeurs'=>$_POST['valeurs'],
-				':id_tirelire'=>$_POST['id_tirelire']
+				':name'=>htmlentities($_POST['name']),
+				':color'=>htmlentities($_POST['color']),
+				':photo'=>htmlentities($_POST['photo']),
+				':href'=>htmlentities($_POST['href']),
+				':category'=>htmlentities($_POST['category']),
+				
 			];
-			$database->inserting($donnee);
+			foreach ($donnee as $key => $value) {
+				if(empty($value))
+				{
+					$confirm =false;
+				}
+			}
+			if($confirm !==false){
+				$database->insert($donnee);
+			}
+			
 
 		}
 	}

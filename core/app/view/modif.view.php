@@ -21,12 +21,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
 
-    <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,36 +31,25 @@
     <style>
     	nav{margin:0px 0px 20px 0px;}
     	#content{margin-top: 100px;}
+      .flexy{display: flex;flex-wrap: wrap;}
+      .block{max-width: 200px;max-height:200px; padding:2px;margin:4px; }
     </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Linker</a>
+     <header>
+        <nav class="flexy">
+          <ul><li>LINKER</li></ul>
+
+          
+        </nav>
+      </header>
+      <main>
+        <h1>Bienvenue dans linker votre favori pertinent</h1>
+        <div class="flexy">
+         <?=$content;?>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#add">Ajouter</a></li>
-            <li><a href="#up">Modifier</a></li>
-            <li><a href="#del">Supprimer</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
-
-    <div id="content" class="container">
-
-    <?=$content;?> 
+      </main>
 
       <hr>
 
@@ -73,7 +57,7 @@
         <p>&copy; <?= '2018 '.date('Y')?>, Marc Lombry.</p>
       </footer>
 
-    </div><!--/.container-->
+    
 
 
     <!-- Bootstrap core JavaScript
@@ -81,9 +65,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="offcanvas.js"></script>
+  
   </body>
 </html>

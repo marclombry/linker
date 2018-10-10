@@ -10,7 +10,7 @@
     <meta name="author" content="marc lombry">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Tirelire</title>
+    <title>Linker</title>
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="http://localhost/tirelire/core/app/public/css/engrenage.css">
@@ -52,7 +52,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Tirelire</a>
+          <a class="navbar-brand" href="#">Linker</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">

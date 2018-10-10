@@ -10,7 +10,7 @@
           <div class="row">
             <div>
               <h2>Back office</h2>
-              <div id="showTirelires" class=""></div>
+              <div id="showTirelire" class=""></div>
             </div>
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->

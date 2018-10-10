@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="virtual piggy bank">
+    <meta name="description" content="virtual favori">
     <meta name="author" content="marc lombry">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Tirelire</title>
+    <title>linker</title>
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/tirelire/core/app/public/css/engrenage.css">
-    <link rel="stylesheet" href="http://localhost/tirelire/core/app/public/css/common.css">
+    <link rel="stylesheet" href="http://localhost/linker/core/app/public/css/engrenage.css">
+    <link rel="stylesheet" href="http://localhost/linker/core/app/public/css/common.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- jQuery library -->
@@ -51,7 +51,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/tirelire">Tirelire</a>
+          <a class="navbar-brand" href="/linker">Linker</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@
               if(!isset($_SESSION['auth']) || empty($_SESSION)){
                 echo '<li><a href="login">Se connecter</a></li>';
               }else{
-                echo '<li><a href="/tirelire/deco">deco</a></li>';
+                echo '<li><a href="/linker/deco">deco</a></li>';
                 echo '<li><a href=""><span class="glyphicon glyphicon-user"></span> '.$_SESSION['auth']['pseudo'].'</a></li>';
               }
             ?>

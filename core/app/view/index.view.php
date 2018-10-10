@@ -38,7 +38,19 @@
   <body>
       <header>
         <nav class="flexy">
-          <ul><li>LINKER</li></ul>
+          <ul>
+            <li>LINKER</li>
+         <?php
+              if(!isset($_SESSION['auth']) || empty($_SESSION)){
+                echo '<li><a href="login">Se connecter</a></li>';
+              }else{
+                echo '<li><a href="admin">Administration</a></li>';
+                echo '<li><a href="deco">deco</a></li>';
+                echo '<li><a href=""><span class="glyphicon glyphicon-user"></span> '.$_SESSION['auth']['pseudo'].'</a></li>';
+               
+              }
+            ?>
+          </ul>
 
           
         </nav>

@@ -9,6 +9,13 @@ $config=require_once('app/database/config.php');
 require_once('app/database/database.php');
 require_once('app/database/table.php');
 $database= new Database($config);
+$dbUser= new Database([
+	'host'=>'localhost',
+	'dbname'=>'tirelire',
+	'username'=>'root',
+	'password'=>''
+]);
+
 require_once('app/model/links.php');
 
 require_once('app/model/authentify.php');

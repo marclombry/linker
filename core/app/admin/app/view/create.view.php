@@ -10,18 +10,32 @@
           <div class="row">
             <div>
               <h2>Back office</h2>
-              <div id="showTirelires" class=""></div>
-                <form id="addPosts" method="POST" action="">
-                  <div>
-                    <label for="euros">Argent : </label>
-                    <input type="text" id="euros" name="valeurs" placeholder="euros(1) centimes (0.10)"> 
-                  </div>
-                  <div>
-                  <label for="id_tirelire">Numero de la tirelire : </label>
-                    <input type="text" id="id_tirelire" name="id_tirelire" placeholder="le numéro de la tirelire">  
-                    <input type="submit" value="Ajouter">
-                  </div>
-                </form>
+              <div id="" class=""></div>
+              <form method="post">
+                <div>
+                  <label for="name">Nom du lien : </label></br>
+                  <?php echo Form::Inputs('name','text','inp','name','nom du lien');?>  
+                </div>    
+                <div>
+                  <label for="color">Nom couleur : </label></br>
+                  <?php echo Form::Inputs('color','text','inp','color','la couleurs');?> 
+                </div>
+                <div>
+                  <label for="photo">Chemin images : </label></br>
+                  <?php echo Form::Inputs('photo','text','inp','photo','chemin images');?> 
+                </div> 
+                <div>  
+                  <label for="href">Cible du lien : </label></br>
+                  <?php echo Form::Inputs('href','text','inp','href','cible du lien');?> 
+                </div>
+                <div>
+                  <label for="category">Nom de la categorie : </label></br>
+                  <?php echo Form::Inputs('category','text','inp','category','nom de la category');?> 
+                </div>
+                <div>
+                   <p><input type="submit" value="ajouter" name="sub" id="sub"></p>
+                </div>
+              </form>
             </div>
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->

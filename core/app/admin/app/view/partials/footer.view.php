@@ -13,6 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
    
-    <script src="http://localhost/tirelire/core/app/admin/app/public/js/fetch.js"></script>
+    <script src="http://localhost/linker/core/app/admin/app/public/js/fetch.js"></script>
   </body>
 </html>

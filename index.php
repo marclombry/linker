@@ -26,7 +26,7 @@ $link = new Links($table->all(true));
 //$l1 = $link->hydrate();
 
 $table->setTable('links');
-$t = $table->select("select * from links where category <> 'cartoon'",true);
+$t = $table->select("select * from links where category <> 'cartoon'");
 
 $all=[];
 foreach ($t as $key => $link) {
