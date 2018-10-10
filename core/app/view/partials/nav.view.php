@@ -40,6 +40,9 @@
     	nav{margin:0px 0px 20px 0px;}
     	#content{margin-top: 100px;}
       form{margin: 100px 10px 10px 10px;}
+        .flexy{display: flex;flex-wrap: wrap;}
+      .block{max-width: 400px;max-height:400px; padding:2px;margin:4px; }
+      main{margin-top: 70px;}
     </style>
   </head>
   <body>
